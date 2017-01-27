@@ -178,7 +178,7 @@ namespace Wpf.Behaviours
                 }
                 else
                 {
-                    double width = allowedSpace*(Percentage/totalPercentage);
+                    double width = allowedSpace < 0 ? 0 : allowedSpace*(Percentage/totalPercentage);
                     _element.Width = width;
                 }
             }
